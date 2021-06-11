@@ -5,7 +5,7 @@ OA = 352 ; AB = 360 ; BC = 360 ; CP = 85 ;
 l1 = AB ; l2 = BC ; l3 = CP ;
 
 theta1 = linspace(180,-20,100) ;
-theta2 = linspace(130,-310,100) ;
+theta2 = linspace(150,-150,100) ;
 theta3 = linspace(115,-115,100);
 
 [THETA1 , THETA2 , THETA3] = meshgrid (theta1,theta2,theta3);%matrice comportant les angle
