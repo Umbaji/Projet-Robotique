@@ -25,7 +25,7 @@ theta3=theta3P*t+thetai3;
 theta3(theta3<(-115*pi./180))=(-115*pi./180);
 theta3(theta3>(115*pi./180))=(115*pi./180);
 
-%Calcul des coordonnées des centres de chaque axes;
+%Calcul des coordonnées des centres de chaque axe;
 
 Bx = AB*cos(theta1);
 By = OA + AB*sin(theta1);
@@ -36,7 +36,7 @@ Cy = By + BC*sin(theta2+theta1);
 Px = Cx + CP*cos(theta3+theta2+theta1);
 Py = Cy + CP*sin(theta3+theta2+theta1);
 
-% Affichage de chaque confirguraiton pour chaque points.
+% Affichage de chaque confirguraiton pour chaque point.
 for j = 1 : N
     plot([Px],[Py],'r.',[0 0 Bx(j) Cx(j) Px(j)],[0 OA  By(j) Cy(j) Py(j)],'linewidth',2,"Marker","o")
     axis equal;
@@ -48,7 +48,7 @@ for j = 1 : N
 end
 
 %Ecriture et lecture de la vidéo;
-movie(M)
+movie(M);
 videofile = VideoWriter('forward_kinematics.avi','Uncompressed Avi');
 open(videofile);
 writeVideo(videofile,M);
