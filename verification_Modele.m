@@ -44,8 +44,8 @@ for j = 1 : N
     clc;
 end
 
-movie(M)
+movie(M);
 videofile = VideoWriter('forward_kinematics.avi','Uncompressed Avi');
-open(videofile)
-writeVideo(videofile,M)
-close(videofile)
+open(videofile);
+writeVideo(videofile,M);
+close(videofile);
